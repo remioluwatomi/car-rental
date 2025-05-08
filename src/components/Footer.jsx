@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {BsFillTelephoneFill} from "react-icons/bs"
 import {Link} from "react-router-dom"
 import {MdEmail} from "react-icons/md"
+import {DefaultBtn as DefaultBtn} from "./CRButtons"
 
  function Footer(){
     const [email, updateEmail] = useState("")
@@ -28,7 +29,7 @@ import {MdEmail} from "react-icons/md"
                           <Link to="tel:+2349078117423"><BsFillTelephoneFill className="inline mr-[10px]"/>(234) 907-811-742-3</Link>
                     </li>
                     <li className="footer-ul-li font-[700] footer-grid-4:min-w-[290px]">
-                         <Link to="mailto:startstickscephas@gmail.com"><MdEmail className="inline mr-[10px]"/>startstickscephas@gmail.com</Link>
+                         <Link to="mailto:remioluwatomicephas@gmail.com"><MdEmail className="inline mr-[10px]"/>remioluwatomicephas@gmail.com</Link>
                     </li>
                     <li className="footer-ul-li"><Link to="#">Developed by <strong>roc</strong></Link></li>
                 </ul>
@@ -52,7 +53,7 @@ import {MdEmail} from "react-icons/md"
 
                     <input placeholder="Enter Email Address" className="bg-[#ececec] px-[60px] mb-[10px] font-[250] text-[.9rem] focus:outline-none mt-[30px] py-[10px] block w-full" type="email" value={email} onChange={(e)=> updateEmail(e.target.value)}/>
 
-                    <button className="min-w[60px] orange-hover"><span>Submit</span></button>
+                    <DefaultBtn content="Submit" styles="orange-btn w-full text-[1.25rem] mb-[20px] py-[20px]" type='submit' args={[email]} callback={submitEmail}/>
 
                 </div>
             </div>
