@@ -3,7 +3,7 @@ import { NavLink} from "react-router-dom"
 import Logo from "../assets/logo.png"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { IoClose } from "react-icons/io5"
-
+import {DefaultBtn as DefaultBtn} from "./CRButtons"
 
 function Header({updatePage}){
     const [toShowMobileNav, setShowMobileNav] = useState(false)
@@ -68,7 +68,8 @@ function Header({updatePage}){
                     </nav>
                     <div className='hidden lg:inline-flex gap-[1rem]'>
                         <button className="min-w[60px] orange-hover"><span>Sign in</span></button>
-                        <button className="min-w[60px] orange-hover"><span>Register</span></button>
+                        <DefaultBtn iconLeft='True' type="button" content='Register' styles={'orange-btn'} />
+                        
                     </div>
 
                     <div className='w-[1.9rem] lg:hidden'>
