@@ -29,7 +29,7 @@ import {DefaultBtn as DefaultBtn} from "./CRButtons"
                           <Link to="tel:+2349078117423"><BsFillTelephoneFill className="inline mr-[10px]"/>(234) 907-811-742-3</Link>
                     </li>
                     <li className="footer-ul-li font-[700] footer-grid-4:min-w-[290px]">
-                         <Link to="mailto:startstickscephas@gmail.com"><MdEmail className="inline mr-[10px]"/>startstickscephas@gmail.com</Link>
+                         <Link to="mailto:remioluwatomicephas@gmail.com"><MdEmail className="inline mr-[10px]"/>remioluwatomicephas@gmail.com</Link>
                     </li>
                     <li className="footer-ul-li"><Link to="#">Developed by <strong>roc</strong></Link></li>
                 </ul>
